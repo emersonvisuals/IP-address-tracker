@@ -1,0 +1,20 @@
+// colours
+$darkGray: hsl(0, 0%, 17%);
+$darkGray: hsl(0, 0%, 59%);
+$blue: hsl(228, 45%, 44%); 
+
+// fonts
+$fontSize: 18px;
+$fontSizeTwo: 11px;
+$fontFamily: Rubik;
+
+@mixin alignText {
+    text-align: center;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

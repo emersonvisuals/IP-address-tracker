@@ -139,15 +139,16 @@ body {
     }
 }
 
-.geoMapContainer {
+#map {
     content: '';
     width: 100vw;
     height: calc(100vh - 15rem);
-    background-color: red;
+    background-color: $white;
     position: absolute;
     top:15rem;
     z-index: -1;
 }
+
 
 
 

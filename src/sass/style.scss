@@ -63,6 +63,7 @@ body {
         @include boxShadow;
         border-radius: 2rem;
         padding: 2rem 0;
+        opacity: 0;
 
         .ipAddress {
             @include flexTwo;
@@ -136,6 +137,11 @@ body {
                 @include containerValues;
             }
         }
+    }
+
+    .statisticsContainer.active {
+        opacity: 100%;
+        transition: 0.5s all;
     }
 }
 

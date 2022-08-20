@@ -1,5 +1,138 @@
 @import './_variables';
 
 body {
-    background-color: $blue;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
 }
+
+.backDrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15rem;
+    background-size: cover;
+    background-image: url(/assets/images/pattern-bg.png);
+    position: absolute;
+    top:0;
+    z-index: -1;
+}
+
+.informationContainer {
+    @include flex;
+    padding: 0 10rem;
+
+    .heading {
+
+        h1 {
+            font-size: 2rem;
+            color: $white;
+            padding: 0;
+            font-weight: 500;
+        }
+    }
+
+    .searchContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 3rem 0;
+
+        .inputContainer {
+            padding: 1rem;
+            width: 25rem;
+            border-radius: 1rem 0 0 1rem;
+            border: none;
+        }
+
+        .inputButton {
+            padding: 1rem 1.5rem;
+            background-color: $veryDarkGray;
+            border-radius: 0 1rem 1rem 0;
+            cursor: pointer;
+        }
+    }
+
+    .statisticsContainer {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: $white;
+        @include boxShadow;
+        border-radius: 2rem;
+        padding: 2rem 0;
+
+        .ipAddress {
+            @include flexTwo;
+            padding: 0 1rem;
+            border-right: solid 0.5px $darkGray;
+            text-align: left;
+
+            .ipAddressTitle {
+                @include containerTitles;
+                position: relative;
+                top:0;
+            }
+
+            .ipAddressValue {
+                @include containerValues;
+            }
+        }
+
+        .location {
+            @include flexTwo;
+            padding: 0 1rem;
+            border-right: solid 0.5px $darkGray;
+            text-align: left;
+
+            .locationTitle {
+                @include containerTitles;
+                position: relative;
+                top:0;
+            }
+
+            .locationValue {
+                @include containerValues;
+            }
+        }
+
+        .timezone {
+            @include flexTwo;
+            padding: 0 1rem;
+            border-right: solid 0.5px $darkGray;
+            text-align: left;
+
+            .timezoneTitle {
+                @include containerTitles;
+                position: relative;
+                top:0;
+            }
+
+            .timezoneValue {
+                @include containerValues;
+            }
+        }
+
+        .isp {
+            @include flexTwo;
+            padding: 0 1rem;
+            text-align: left;
+
+            .ispTitle {
+                @include containerTitles;
+                position: relative;
+                top:0;
+            }
+
+            .ispValue {
+                @include containerValues;
+            }
+        }
+    }
+}
+
+
+
+

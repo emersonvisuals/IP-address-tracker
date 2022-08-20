@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+
+.backDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 15rem;
+  background-size: cover;
+  background-image: url(/assets/images/pattern-bg.png);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.informationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10rem;
+}
+.informationContainer .heading h1 {
+  font-size: 2rem;
+  color: white;
+  padding: 0;
+  font-weight: 500;
+}
+.informationContainer .searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 3rem 0;
+}
+.informationContainer .searchContainer .inputContainer {
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+}
+.informationContainer .searchContainer .inputButton {
+  padding: 1rem 1.5rem;
+  background-color: hsl(0deg, 0%, 17%);
+  border-radius: 0 1rem 1rem 0;
+  cursor: pointer;
+}
+.informationContainer .statisticsContainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  padding: 2rem 0;
+  opacity: 0;
+}
+.informationContainer .statisticsContainer .ipAddress {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-right: solid 0.5px hsl(0deg, 0%, 59%);
+}
+.informationContainer .statisticsContainer .ipAddress .ipAddressTitle {
+  font-size: 18px;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+}
+.informationContainer .statisticsContainer .ipAddress .ipAddressValue {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+.informationContainer .statisticsContainer .location {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-right: solid 0.5px hsl(0deg, 0%, 59%);
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.informationContainer .statisticsContainer .location .locationTitle {
+  font-size: 18px;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+}
+.informationContainer .statisticsContainer .location .locationValue {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+.informationContainer .statisticsContainer .timezone {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-right: solid 0.5px hsl(0deg, 0%, 59%);
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.informationContainer .statisticsContainer .timezone .timezoneTitle {
+  font-size: 18px;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+}
+.informationContainer .statisticsContainer .timezone .timezoneValue {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+.informationContainer .statisticsContainer .isp {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.informationContainer .statisticsContainer .isp .ispTitle {
+  font-size: 18px;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+}
+.informationContainer .statisticsContainer .isp .ispValue {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+.informationContainer .statisticsContainer.active {
+  opacity: 100%;
+  transition: 0.5s all;
+}
+
+#map {
+  content: "";
+  width: 100vw;
+  height: calc(100vh - 15rem);
+  background-color: white;
+  position: absolute;
+  top: 15rem;
+  z-index: -1;
+}

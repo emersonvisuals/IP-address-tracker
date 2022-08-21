@@ -6,7 +6,7 @@ $white: #ffff;
 
 // fonts
 $fontSize: 18px;
-$fontSizeTwo: 11px;
+$fontSizeTwo: 14px;
 $fontSizeThree: 25px;
 $fontFamily: Rubik;
 
@@ -38,6 +38,16 @@ $fontFamily: Rubik;
     color: $darkGray;
     font-weight: 500;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+@mixin containerTitlesMobile {
+    font-size: $fontSizeTwo;
+    color: $darkGray;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 @mixin containerValues {

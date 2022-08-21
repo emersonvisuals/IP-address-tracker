@@ -38,7 +38,7 @@ button.addEventListener('click', () => {
     getVal();
 
     function getData() {
-        fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_VWo7RHLulsmKoMBYuuIVzf8DcAWYK&ipAddress=${userInput.value}`)
+        fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_puAweYRxXH1bIVhKSiAa2GsFXWsAK&ipAddress=${userInput.value}`)
         .then(response => response.json())
         .then(data => {
             if (data.ip === undefined) {
@@ -70,7 +70,7 @@ document.addEventListener("keyup", function(event) {
         getVal();
     
         function getData() {
-            fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_VWo7RHLulsmKoMBYuuIVzf8DcAWYK&ipAddress=${userInput.value}`)
+            fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_puAweYRxXH1bIVhKSiAa2GsFXWsAK&ipAddress=${userInput.value}`)
             .then(response => response.json())
             .then(data => {
                 if (data.ip === undefined) {

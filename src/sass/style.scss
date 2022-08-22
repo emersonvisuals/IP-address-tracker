@@ -176,7 +176,7 @@ body {
             justify-content: center;
             align-items: center;
             margin: 0 0 1rem 0;
-            width: calc(100vw - 3rem);
+            width: calc(100vw - 2rem);
     
             .inputContainer {
                 padding: 1rem;
@@ -202,7 +202,7 @@ body {
             background-color: $white;
             @include boxShadow;
             border-radius: 0.75rem;
-            width: calc(100vw - 3rem);
+            width: calc(100vw - 2rem);
             padding: 1rem 0;
             opacity: 100%;
     

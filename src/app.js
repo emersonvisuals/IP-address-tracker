@@ -7,6 +7,10 @@ let userInput = document.querySelector('input.inputContainer');
 let statisticsContainer = document.querySelector('.statisticsContainer');
 let map = L.map('map');
 
+let myIcon = L.icon({
+    iconUrl: '../images/icon-location.svg'
+});
+
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
@@ -23,7 +27,7 @@ function start() {
         console.log(data);
             
         map.setView([`${data.location.lat}`, `${data.location.lng}`], `${data.location.geonameId}`);
-        L.marker([`${data.location.lat}`, `${data.location.lng}`]).addTo(map);
+        L.marker([`${data.location.lat}`, `${data.location.lng}`], {icon: myIcon}).addTo(map);
 
         statisticsContainer.classList.add('active');
     })

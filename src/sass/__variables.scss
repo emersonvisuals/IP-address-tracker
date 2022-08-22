@@ -5,9 +5,10 @@ $blue: hsl(228, 45%, 44%);
 $white: #ffff;
 
 // fonts
-$fontSize: 18px;
-$fontSizeTwo: 14px;
+$fontSize: 15px;
+$fontSizeTwo: 13px;
 $fontSizeThree: 25px;
+$fontSizeFour: 20px;
 $fontFamily: Rubik;
 
 @mixin alignText {
@@ -41,7 +42,6 @@ $fontFamily: Rubik;
     letter-spacing: 0.1rem;
 }
 
-
 @mixin containerTitlesMobile {
     font-size: $fontSizeTwo;
     color: $darkGray;
@@ -52,6 +52,12 @@ $fontFamily: Rubik;
 
 @mixin containerValues {
     font-size: $fontSizeThree;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin containerValuesMobile {
+    font-size: $fontSizeFour;
     padding: 0;
     margin: 0;
 }

@@ -42,13 +42,14 @@ body {
 .informationContainer .searchContainer .inputContainer {
   padding: 1rem;
   width: 25rem;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 0.75rem 0 0 0.75rem;
   border: none;
+  color: hsl(0deg, 0%, 17%);
 }
 .informationContainer .searchContainer .inputButton {
   padding: 1rem 1.5rem;
   background-color: hsl(0deg, 0%, 17%);
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 0.75rem 0.75rem 0;
   cursor: pointer;
 }
 .informationContainer .statisticsContainer {
@@ -58,7 +59,7 @@ body {
   background-color: white;
   -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
-  border-radius: 2rem;
+  border-radius: 0.75rem;
   padding: 2rem 0;
   opacity: 100%;
   width: auto;
@@ -67,10 +68,10 @@ body {
   display: grid;
   align-items: flex-start;
   border-right: solid 0.5px hsl(0deg, 0%, 59%);
-  padding: 0 1rem;
+  padding: 0 1rem 0 2rem;
 }
 .informationContainer .statisticsContainer .ipAddress .ipAddressTitle {
-  font-size: 18px;
+  font-size: 15px;
   color: hsl(0deg, 0%, 59%);
   font-weight: 500;
   text-transform: uppercase;
@@ -86,11 +87,11 @@ body {
 .informationContainer .statisticsContainer .location {
   display: grid;
   align-items: flex-start;
-  padding: 0 1rem;
+  padding: 0 1rem 0 2rem;
   border-right: solid 0.5px hsl(0deg, 0%, 59%);
 }
 .informationContainer .statisticsContainer .location .locationTitle {
-  font-size: 18px;
+  font-size: 15px;
   color: hsl(0deg, 0%, 59%);
   font-weight: 500;
   text-transform: uppercase;
@@ -106,11 +107,11 @@ body {
 .informationContainer .statisticsContainer .timezone {
   display: grid;
   align-items: flex-start;
-  padding: 0 1rem;
+  padding: 0 1rem 0 2rem;
   border-right: solid 0.5px hsl(0deg, 0%, 59%);
 }
 .informationContainer .statisticsContainer .timezone .timezoneTitle {
-  font-size: 18px;
+  font-size: 15px;
   color: hsl(0deg, 0%, 59%);
   font-weight: 500;
   text-transform: uppercase;
@@ -126,10 +127,10 @@ body {
 .informationContainer .statisticsContainer .isp {
   display: grid;
   align-items: flex-start;
-  padding: 0 1rem;
+  padding: 0 1rem 0 2rem;
 }
 .informationContainer .statisticsContainer .isp .ispTitle {
-  font-size: 18px;
+  font-size: 15px;
   color: hsl(0deg, 0%, 59%);
   font-weight: 500;
   text-transform: uppercase;
@@ -157,7 +158,7 @@ body {
   z-index: -1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .informationContainer {
     display: flex;
     align-items: center;
@@ -176,6 +177,7 @@ body {
   .informationContainer .searchContainer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin: 0 0 1rem 0;
     width: calc(100vw - 3rem);
@@ -183,13 +185,13 @@ body {
   .informationContainer .searchContainer .inputContainer {
     padding: 1rem;
     width: 25rem;
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 0.75rem 0 0 0.75rem;
     border: none;
   }
   .informationContainer .searchContainer .inputButton {
     padding: 1rem 1.5rem;
     background-color: hsl(0deg, 0%, 17%);
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 0.75rem 0.75rem 0;
     cursor: pointer;
   }
   .informationContainer .statisticsContainer {
@@ -201,7 +203,7 @@ body {
     background-color: white;
     -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
-    border-radius: 2rem;
+    border-radius: 0.75rem;
     width: calc(100vw - 3rem);
     padding: 1rem 0;
     opacity: 100%;
@@ -214,7 +216,7 @@ body {
     padding: 0 0.5rem;
   }
   .informationContainer .statisticsContainer .ipAddress .ipAddressTitle {
-    font-size: 14px;
+    font-size: 13px;
     color: hsl(0deg, 0%, 59%);
     font-weight: 500;
     text-transform: uppercase;
@@ -223,7 +225,7 @@ body {
     top: 0;
   }
   .informationContainer .statisticsContainer .ipAddress .ipAddressValue {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
   }
@@ -235,7 +237,7 @@ body {
     border-right: solid 0.5px hsl(0deg, 0%, 59%);
   }
   .informationContainer .statisticsContainer .location .locationTitle {
-    font-size: 14px;
+    font-size: 13px;
     color: hsl(0deg, 0%, 59%);
     font-weight: 500;
     text-transform: uppercase;
@@ -244,7 +246,7 @@ body {
     top: 0;
   }
   .informationContainer .statisticsContainer .location .locationValue {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
   }
@@ -256,7 +258,7 @@ body {
     border-right: solid 0.5px hsl(0deg, 0%, 59%);
   }
   .informationContainer .statisticsContainer .timezone .timezoneTitle {
-    font-size: 14px;
+    font-size: 13px;
     color: hsl(0deg, 0%, 59%);
     font-weight: 500;
     text-transform: uppercase;
@@ -265,7 +267,7 @@ body {
     top: 0;
   }
   .informationContainer .statisticsContainer .timezone .timezoneValue {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
   }
@@ -276,7 +278,7 @@ body {
     padding: 0 0.5rem;
   }
   .informationContainer .statisticsContainer .isp .ispTitle {
-    font-size: 14px;
+    font-size: 13px;
     color: hsl(0deg, 0%, 59%);
     font-weight: 500;
     text-transform: uppercase;
@@ -285,7 +287,7 @@ body {
     top: 0;
   }
   .informationContainer .statisticsContainer .isp .ispValue {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
   }

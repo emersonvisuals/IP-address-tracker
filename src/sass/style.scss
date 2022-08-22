@@ -45,14 +45,15 @@ body {
         .inputContainer {
             padding: 1rem;
             width: 25rem;
-            border-radius: 1rem 0 0 1rem;
+            border-radius: 0.75rem 0 0 0.75rem;
             border: none;
+            color: $veryDarkGray;
         }
 
         .inputButton {
             padding: 1rem 1.5rem;
             background-color: $veryDarkGray;
-            border-radius: 0 1rem 1rem 0;
+            border-radius: 0 .75rem .75rem 0;
             cursor: pointer;
         }
     }
@@ -63,7 +64,7 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         background-color: $white;
         @include boxShadow;
-        border-radius: 2rem;
+        border-radius: 0.75rem;
         padding: 2rem 0;
         opacity: 100%;
         width: auto;
@@ -72,7 +73,7 @@ body {
             display: grid;
             align-items: flex-start;
             border-right: solid 0.5px $darkGray;
-            padding: 0 1rem;
+            padding: 0 1rem 0 2rem;
 
             .ipAddressTitle {
                 @include containerTitles;
@@ -88,7 +89,7 @@ body {
         .location {
             display: grid;
             align-items: flex-start;
-            padding: 0 1rem;
+            padding: 0 1rem 0 2rem;
             border-right: solid 0.5px $darkGray;
 
             .locationTitle {
@@ -105,7 +106,7 @@ body {
         .timezone {
             display: grid;
             align-items: flex-start;
-            padding: 0 1rem;
+            padding: 0 1rem 0 2rem;
             border-right: solid 0.5px $darkGray;
 
             .timezoneTitle {
@@ -122,7 +123,7 @@ body {
         .isp {
             display: grid;
             align-items: flex-start;
-            padding: 0 1rem;
+            padding: 0 1rem 0 2rem;
 
             .ispTitle {
                 @include containerTitles;
@@ -152,7 +153,7 @@ body {
     z-index: -1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .informationContainer {
         @include flex;
         padding: 0 10rem;
@@ -172,6 +173,7 @@ body {
         .searchContainer {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
             margin: 0 0 1rem 0;
             width: calc(100vw - 3rem);
@@ -179,14 +181,14 @@ body {
             .inputContainer {
                 padding: 1rem;
                 width: 25rem;
-                border-radius: 1rem 0 0 1rem;
+                border-radius: 0.75rem 0 0 0.75rem;
                 border: none;
             }
     
             .inputButton {
                 padding: 1rem 1.5rem;
                 background-color: $veryDarkGray;
-                border-radius: 0 1rem 1rem 0;
+                border-radius: 0 0.75rem 0.75rem 0;
                 cursor: pointer;
             }
         }
@@ -199,7 +201,7 @@ body {
             justify-content: center;
             background-color: $white;
             @include boxShadow;
-            border-radius: 2rem;
+            border-radius: 0.75rem;
             width: calc(100vw - 3rem);
             padding: 1rem 0;
             opacity: 100%;
@@ -218,7 +220,7 @@ body {
                 }
     
                 .ipAddressValue {
-                    @include containerValues;
+                    @include containerValuesMobile;
                 }
             }
     
@@ -236,7 +238,7 @@ body {
                 }
     
                 .locationValue {
-                    @include containerValues;
+                    @include containerValuesMobile;
                 }
             }
     
@@ -254,7 +256,7 @@ body {
                 }
     
                 .timezoneValue {
-                    @include containerValues;
+                    @include containerValuesMobile;
                 }
             }
     
@@ -271,7 +273,7 @@ body {
                 }
     
                 .ispValue {
-                    @include containerValues;
+                    @include containerValuesMobile;
                 }
             }
         }

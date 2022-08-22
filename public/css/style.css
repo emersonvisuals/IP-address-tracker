@@ -177,7 +177,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
     width: calc(100vw - 3rem);
   }
   .informationContainer .searchContainer .inputContainer {
@@ -211,7 +211,7 @@ body {
     align-items: center;
     text-align: center;
     border-right: solid 0.5px hsl(0deg, 0%, 59%);
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
   .informationContainer .statisticsContainer .ipAddress .ipAddressTitle {
     font-size: 14px;
@@ -231,7 +231,7 @@ body {
     display: grid;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     border-right: solid 0.5px hsl(0deg, 0%, 59%);
   }
   .informationContainer .statisticsContainer .location .locationTitle {
@@ -252,7 +252,7 @@ body {
     display: grid;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     border-right: solid 0.5px hsl(0deg, 0%, 59%);
   }
   .informationContainer .statisticsContainer .timezone .timezoneTitle {
@@ -273,7 +273,7 @@ body {
     display: grid;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
   .informationContainer .statisticsContainer .isp .ispTitle {
     font-size: 14px;
